@@ -1,5 +1,5 @@
 # E-commerce-Dataset
-# ETL Project - E-commerce Dataset
+
 
 This repository contains an ETL (Extract, Transform, Load) project focused on processing an E-commerce dataset. The goal of this project is to extract data from various sources, perform transformations to ensure data quality and consistency, and load the transformed data into a target database for further analysis and reporting.
 
