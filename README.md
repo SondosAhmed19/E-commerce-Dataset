@@ -1,7 +1,8 @@
 # E-commerce-Dataset
 
+This repository contains an ETL (Extract, Transform, Load) project focused on processing an E-commerce dataset. The goal of this project is to extract data from csv files, perform transformations to ensure data quality and consistency, and load the transformed data into a target database for further analysis.
 
-This repository contains an ETL (Extract, Transform, Load) project focused on processing an E-commerce dataset. The goal of this project is to extract data from various sources, perform transformations to ensure data quality and consistency, and load the transformed data into a target database for further analysis and reporting.
+
 
 ## Dataset
 
@@ -14,15 +15,38 @@ The E-commerce dataset used in this project consists of customer information, pr
 - `seller_dataset.csv`: Contains information about seller, such as seller ID, name, email, and address.
 - `payment_dataset.csv`:contains payment method for orders.
 - `feedback_dataset.csv`:contains feedbacks of users.
-- 
   
+  
+## Data modeling
+
+1-Identify Key Entities:
+Determine the essential entities in the eCommerce domain, such as customers, products, orders, payments, inventory, and shipments. These entities represent the core components of an eCommerce system.
+
+2-Define Entity Relationships:
+Establish relationships between the identified entities. For example, a customer can have multiple orders, an order can contain multiple products, and a product can be associated with various attributes like category, brand, and price.
+
+3- Capture Data Attributes:
+Identify the specific attributes or properties for each entity. For instance, customer attributes might include name, address, email, and phone number. Product attributes could encompass SKU, name, description, price, and stock quantity.
+
+4- Determine Primary Keys and Foreign Keys:
+Assign primary keys to uniquely identify each entity. These keys serve as the primary means of referencing and linking data between entities. Foreign keys represent the relationships between entities by referring to the primary key of another entity.
+
+5- Establish Data Types and Constraints:
+Define appropriate data types for each attribute, such as string, integer, decimal, or date. Additionally, set constraints and validations to ensure data integrity and consistency, such as unique constraints, not-null constraints, and range checks.
+
+6- Consider Dimensional Modeling:
+ make dimensional modeling techniques like star schema. These models facilitate efficient querying and analysis by organizing data into facts (orders) and dimensions (users, product, seller, payment, feedback).
+ 
+7- Plan for Historical Data and Auditing:
+Determine how historical data will be managed, as well as any requirements for tracking and auditing changes to the data. This could involve implementing techniques like slowly changing dimensions (SCDs) to capture historical changes in entity attributes.
+
 
 ## ETL Process
 
 The ETL process for this project follows the standard flow of Extract, Transform, and Load:
 
 1. Extraction:
-   - The data is extracted from the provided CSV files using a Python script.
+   - The data is extracted from the provided CSV files.
    - The script reads the CSV files and loads the data into memory for further processing.
 
 2. Transformation:
