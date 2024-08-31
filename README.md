@@ -4,7 +4,7 @@ This repository contains an ETL (Extract, Transform, Load) project focused on pr
 
 
 
-## Dataset
+## Dataset overview
 
 The E-commerce dataset used in this project consists of customer information, product details, order history, and transactional data. The dataset is provided in CSV format and is located in the `data` directory. It includes the following files:
 
